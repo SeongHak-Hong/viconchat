@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="images/favicon/favicon.png" rel="shortcut icon">
+    <title>VICONCHAT</title>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/common/logo.png" alt="비콘챗 로고">
+                    </a>
+                </h1>
+                <form class="nav_search" action="#" method="get">
+                    <button>search</button>
+                    <span>
+                        <input type="search" placeholder="챗, 콘텐츠 등 검색">
+                    </span>
+                </form>
+                <div class="hot_search">
+                    <ul>
+                        <li>
+                            <a href="#">1. 지옥</a>
+                            <span>new</span>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="chat">
+                        <a href="#">
+                            <img src="images/common/chat.png" alt="챗">
+                        </a>
+                    </div>
+                    <div class="music">
+                        <a href="#">
+                            <img src="images/common/music.png" alt="뮤직">
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="#">
+                            <img src="images/common/profile.png" alt="프로필">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="favorite">
+        <h2 class="hide">취향 설정 영역</h2>
+        <div class="wrap">
+            <span>나의 취향</span>
+            <button class="genre">
+                <a href="#">액션</a>
+            </button>
+            <button class="genre">
+                <a href="#">미스터리</a>
+            </button>
+            <button class="genre">
+                <a href="#">영화</a>
+            </button>
+            <button class="genre">
+                <a href="#">충격적인</a>
+            </button>
+            <button class="setting">setting</button>
+        </div>
+    </section>
+    <section class="visit">
+        <h2 class="hide">최근 방문 챗 영역</h2>
+        <div class="wrap">
+            <span>최근 방문</span>
+            <button class="genre">
+                <a href="#" class="chat_name">지옥</a>
+                <button class="close">×</button>
+            </button>
+            <button class="genre">
+                <a href="#" class="chat_name">오징어게임</a>
+                <button class="close">×</button>
+            </button>
+            <button class="genre">
+                <a href="#" class="chat_name">아케인</a>
+                <button class="close">×</button>
+            </button>
+            <button class="genre">
+                <a href="#" class="chat_name">기묘한 이야기</a>
+                <button class="close">×</button>
+            </button>
+        </div>
+    </section>
+    <main class="sub2">
+        <div class="wrap">
+            <section class="hot_content_music">
+                <h2 class="hide">핫 콘텐츠 뮤직 영역</h2>
+                <div class="top clear">
+                    <h2 class="title">핫 콘텐츠</h2>
+                    <div class="btn">
+                        <a href="#">
+                            <img src="images/common/setting_white.png" alt="설정">
+                        </a>
+                        <a href="#">
+                            <img src="images/common/more_white.png" alt="더보기">
+                        </a>
+                    </div>
+                </div>
+                <div class="poster">
+                    <ul>
+                        <li>
+                            <span>
+                                <img src="images/sub/poster1.png" alt="지옥 포스터">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="images/sub/poster2.png" alt="오징어게임 포스터">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="images/sub/poster3.png" alt="아케인 포스터">
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="btn prev">prev</button>
+                    <button class="btn next">next</button>
+                </div>
+                <div class="chat">
+                    <form>
+                        <table class="musicList">
+                            <tr class="label">
+                                <th class="checkbox">
+                                    <input type="checkbox" id="check1">
+                                    <label for="check1"></label>
+                                </th>
+                                <th class="number">54곡</th>
+                                <th class="albumArt">앨범아트</th>
+                                <th class="song">제목</th>
+                                <th class="singer">가수</th>
+                                <th class="album">엘범제목</th>
+                                <th class="icon">유튜브바로가기</th>
+                                <th class="icon">찜</th>
+                                <th class="icon">더보기</th>
+                            </tr>
+                            <tr class="list1">
+                                <td class="checkbox">
+                                    <input type="checkbox" id="check2">
+                                    <label for="check2"></label>
+                                </td>
+                                <td class="number">1</td>
+                                <td class="albumArt">
+                                    <img src="images/sub/albumArt1.png" alt="아케인 앨범아트">
+                                </td>
+                                <td class="song">Enemy</td>
+                                <td class="singer">Imagine Dragons, J.I.D, League of Legends</td>
+                                <td class="album">Enemy (from the series Arcane League of Legends)</td>
+                                <td class="icon">
+                                    <a href="https://youtu.be/IOrbP1OqNsg">
+                                        <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                        <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                    </a>
+                                </td>
+                                <td class="icon">
+                                    <span>
+                                        <img class=off src="images/sub/icon_heart_hover.png" alt="찜">
+                                    </span>
+                                </td>
+                                <td class="icon">
+                                    <div>
+                                        <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                        <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="list2">
+                                <td class="checkbox">
+                                    <input type="checkbox" id="check3">
+                                    <label for="check3"></label>
+                                </td>
+                                <td class="number">2</td>
+                                <td class="albumArt">
+                                    <img src="images/sub/albumArt2.png" alt="아케인 앨범아트">
+                                </td>
+                                <td class="song">Dynasties and Dystopia (From the series Arcane League of Legends)</td>
+                                <td class="singer">Denzel Curry, Gizzle, Bren Joy</td>
+                                <td class="album">Arcane, League of Legends</td>
+                                <td class="icon">
+                                    <a href="https://youtu.be/y_fB0IMbq54">
+                                        <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                        <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                    </a>
+                                </td>
+                                <td class="icon">
+                                    <span>
+                                        <img class=off src="images/sub/icon_heart_hover.png" alt="찜">
+                                    </span>
+                                </td>
+                                <td class="icon">
+                                    <div>
+                                        <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                        <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="list3">
+                                <td class="checkbox">
+                                    <input type="checkbox" id="check4">
+                                    <label for="check4"></label>
+                                </td>
+                                <td class="number">3</td>
+                                <td class="albumArt">
+                                    <img src="images/sub/albumArt2.png" alt="아케인 앨범아트">
+                                </td>
+                                <td class="song">Playground (from the series Arcane League of Legends)</td>
+                                <td class="singer">Bea Miller</td>
+                                <td class="album">Arcane, League of Legends</td>
+                                <td class="icon">
+                                    <a href="https://youtu.be/3jfI-z__GY0">
+                                        <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                        <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                    </a>
+                                </td>
+                                <td class="icon">
+                                    <span>
+                                        <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                    </span>
+                                </td>
+                                <td class="icon">
+                                    <div>
+                                        <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                        <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="list4">
+                                <td class="checkbox">
+                                    <input type="checkbox" id="check5">
+                                    <label for="check5"></label>
+                                </td>
+                                <td class="number">4</td>
+                                <td class="albumArt">
+                                    <img src="images/sub/albumArt3.png" alt="아케인 앨범아트">
+                                </td>
+                                <td class="song">The City of Progress</td>
+                                <td class="singer">Arcane</td>
+                                <td class="album">Arcane, League of Legends</td>
+                                <td class="icon">
+                                    <a href="https://youtu.be/cO00vwy2JWw">
+                                        <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                        <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                    </a>
+                                </td>
+                                <td class="icon">
+                                    <span>
+                                        <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                    </span>
+                                </td>
+                                <td class="icon">
+                                    <div>
+                                        <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                        <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="list5">
+                                <td class="checkbox">
+                                    <input type="checkbox" id="check6">
+                                    <label for="check6"></label>
+                                </td>
+                                <td class="number">5</td>
+                                <td class="albumArt">
+                                    <img src="images/sub/albumArt3.png" alt="아케인 앨범아트">
+                                </td>
+                                <td class="song">The Bridge (Feat. Ray Chen)</td>
+                                <td class="singer">Arcane</td>
+                                <td class="album">Arcane, League of Legends</td>
+                                <td class="icon">
+                                    <a href="https://youtu.be/IYzVU6fyuno">
+                                        <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                        <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                    </a>
+                                </td>
+                                <td class="icon">
+                                    <span>
+                                        <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                    </span>
+                                </td>
+                                <td class="icon">
+                                    <div>
+                                        <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                        <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </section>
+            <section class="chat music">
+                <h2 class="hide">핫 뮤직 영역</h2>
+                <div class="top clear">
+                    <h2 class="title">핫 뮤직</h2>
+                    <div class="btn">
+                        <a href="#">
+                            <img src="images/common/setting_blue.png" alt="설정">
+                        </a>
+                        <a href="#">
+                            <img src="images/common/more_blue.png" alt="더보기">
+                        </a>
+                    </div>
+                </div>
+                <form>
+                    <table class="musicList">
+                        <tr class="label">
+                            <th class="checkbox">
+                                <input type="checkbox" id="check7">
+                                <label for="check7"></label>
+                            </th>
+                            <th class="number">순위</th>
+                            <th class="albumArt">앨범아트</th>
+                            <th class="song">제목</th>
+                            <th class="singer">가수</th>
+                            <th class="album">엘범제목</th>
+                            <th class="icon">유튜브바로가기</th>
+                            <th class="icon">찜</th>
+                            <th class="icon">더보기</th>
+                        </tr>
+                        <tr class="list1">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check8">
+                                <label for="check8"></label>
+                            </td>
+                            <td class="number">1</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt1.png" alt="아케인 앨범아트">
+                            </td>
+                            <td class="song">Enemy</td>
+                            <td class="singer">Imagine Dragons, J.I.D, League of Legends</td>
+                            <td class="album">Enemy (from the series Arcane League of Legends)</td>
+                            <td class="icon">
+                                <a href="https://youtu.be/IOrbP1OqNsg">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart_hover.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list2">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check9">
+                                <label for="check9"></label>
+                            </td>
+                            <td class="number">2</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt2.png" alt="아케인 앨범아트">
+                            </td>
+                            <td class="song">Dynasties and Dystopia (From the series Arcane League of Legends)</td>
+                            <td class="singer">Denzel Curry, Gizzle, Bren Joy</td>
+                            <td class="album">Arcane, League of Legends</td>
+                            <td class="icon">
+                                <a href="https://youtu.be/y_fB0IMbq54">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart_hover.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list3">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check10">
+                                <label for="check10"></label>
+                            </td>
+                            <td class="number">3</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt4.png" alt="갯마을 차차차 앨범아트">
+                            </td>
+                            <td class="song">바람</td>
+                            <td class="singer">최유리</td>
+                            <td class="album">갯마을 차차차 OST PART 4</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=G6tAF9f4N6Q">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list4">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check11">
+                                <label for="check11"></label>
+                            </td>
+                            <td class="number">4</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt5.png" alt="갯마을 차차차 앨범아트">
+                            </td>
+                            <td class="song">My Romance</td>
+                            <td class="singer">CHEEZE (치즈)</td>
+                            <td class="album">갯마을 차차차 OST PART 3</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=ywjfQohQDVM">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list5">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check12">
+                                <label for="check12"></label>
+                            </td>
+                            <td class="number">5</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt6.png" alt="마이네임 앨범아트">
+                            </td>
+                            <td class="song">My name (Feat. Swervy, Jeminn)</td>
+                            <td class="singer">황상준</td>
+                            <td class="album">마이네임 OST</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=_Cu-5NzGfQA">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list6">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check13">
+                                <label for="check13"></label>
+                            </td>
+                            <td class="number">6</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt7.png" alt="오렌지 이즈 더 뉴 블랙 앨범아트">
+                            </td>
+                            <td class="song">오렌지 이즈 더 뉴 블랙 OST You've Got Time (From "Orange Is The New Black")</td>
+                            <td class="singer">Royal Philharmonic Orchestra, Marisha Wallace</td>
+                            <td class="album">앨범명클래식으로 듣는 드라마 OST 연주곡</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=w9_isl1jjHc">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list7">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check14">
+                                <label for="check14"></label>
+                            </td>
+                            <td class="number">7</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt8.png" alt="D.P. 앨범아트">
+                            </td>
+                            <td class="song">Good Bye (이제)</td>
+                            <td class="singer">Meego, Renee, 프라이머리</td>
+                            <td class="album">D.P. OST</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=e6z7NA-PoKs">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list8">
+                            <td class="checkbox">
+                                <input type="checkbox" id="check15">
+                                <label for="check15"></label>
+                            </td>
+                            <td class="number">8</td>
+                            <td class="albumArt">
+                                <img src="images/sub/albumArt9.png" alt="기묘한 이야기 앨범아트">
+                            </td>
+                            <td class="song">Stranger Things</td>
+                            <td class="singer">Kyle Dixon & Michael Stein
+                            </td>
+                            <td class="album">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</td>
+                            <td class="icon">
+                                <a href="https://www.youtube.com/watch?v=2obv0DHuhu4&list=PLgROM6oFx_rpu9Cv5kuZ2yp-AVhR7-_i3">
+                                    <img class=off src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                    <img class=on src="images/sub/icon_ott_hover.png" alt="유튜브 바로가기">
+                                </a>
+                            </td>
+                            <td class="icon">
+                                <span>
+                                    <img class=off src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                            </td>
+                            <td class="icon">
+                                <div>
+                                    <img class=off src="images/sub/icon_more.png" alt="더보기">
+                                    <img class=on src="images/sub/icon_more_hover.png" alt="더보기">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section class="review_music">
+            <h2 class="hide">리뷰 콘텐츠 뮤직 추천 영역</h2>
+            <div class="wrap">
+                <div class="top clear">
+                     <h2 class="title">아이킹 님이 리뷰하신 콘텐츠의 OST를 알려드려요</h2>
+                    <div class="btn">
+                        <a href="#">
+                            <img src="images/common/setting_white.png" alt="설정">
+                        </a>
+                        <a href="#">
+                            <img src="images/common/more_white.png" alt="더보기">
+                        </a>
+                    </div>
+                </div>
+                <div class="contents">
+                    <ul>
+                        <li class="list off">
+                            <div class="img">
+                                <img src="images/sub/bigAlbum4.png" alt="ENEMY 앨범아트">
+                            </div>
+                            <div class="text">
+                                <strong>Enemy</strong>
+                                <span>Imagine Dragons, J.I.D, League of Legends</span>
+                                <span>넷플릭스 ‘아케인’</span>
+                            </div>
+                            <div class="btn">
+                                <a href="https://youtu.be/IOrbP1OqNsg">
+                                    <img src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                </a>
+                                <span>
+                                    <img src="images/sub/icon_heart.png" alt="찜">
+                                </span>
+                                <span>
+                                    <img src="images/sub/icon_more.png" alt="더보기">
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list off">
+                            <div class="img">
+                                <img src="images/sub/bigAlbum2.png" alt="ENEMY 앨범아트">
+                            </div>
+                            <div class="text">
+                                <strong>Enemy</strong>
+                                <span>Imagine Dragons, J.I.D, League of Legends</span>
+                                <span>넷플릭스 ‘아케인’</span>
+                            </div>
+                        </li>
+                        <li class="list on">
+                            <div class="img">
+                                <img src="images/sub/bigAlbum1.png" alt="ENEMY 앨범아트">
+                            </div>
+                            <div class="text">
+                                <strong>Enemy</strong>
+                                <span>Imagine Dragons, J.I.D, League of Legends</span>
+                                <span>넷플릭스 ‘아케인’</span>
+                            </div>
+                            <div class="btn">
+                                <a href="https://youtu.be/IOrbP1OqNsg">
+                                    <img src="images/sub/icon_ott.png" alt="유튜브 바로가기">
+                                </a>
+                                <span>
+                                    <img src="images/sub/icon_heart_hover.png" alt="찜">
+                                </span>
+                                <span>
+                                    <img src="images/sub/icon_more.png" alt="더보기">
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list off">
+                            <div class="img">
+                                <img src="images/sub/bigAlbum3.png" alt="ENEMY 앨범아트">
+                            </div>
+                            <div class="text">
+                                <strong>Enemy</strong>
+                                <span>Imagine Dragons, J.I.D, League of Legends</span>
+                                <span>넷플릭스 ‘아케인’</span>
+                            </div>
+                        </li>
+                        <li class="list off">
+                            <div class="img">
+                                <img src="images/sub/bigAlbum5.png" alt="ENEMY 앨범아트">
+                            </div>
+                            <div class="text">
+                                <strong>Enemy</strong>
+                                <span>Imagine Dragons, J.I.D, League of Legends</span>
+                                <span>넷플릭스 ‘아케인’</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn prev">prev</button>
+                    <button class="btn next">next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">회사소개</a>
+            </li>
+            <li>
+                <a href="#">인재채용</a>
+            </li>
+            <li>
+                <a href="#">제휴안내</a>
+            </li>
+            <li>
+                <a href="#">광고안내</a>
+            </li>
+            <li>
+                <a href="#">이용약관</a>
+            </li>
+            <li>
+                <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+                <a href="#">청소년보호정책</a>
+            </li>
+        </ul>
+        <span>Copyright ⓒ 2019 - 2021 viconchat. All rights reserved.</span>
+    </footer>
+</body>
+</html>
