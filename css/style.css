@@ -88,10 +88,10 @@ main .wrap .top > .btn {
 }
 .musicList th, 
 .musicList td {
-   display:flex;
-   align-items: center;
-   /* flex-wrap: wrap; */
-   justify-content: center;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .musicList tr > .checkbox {
     width:44px;
@@ -277,6 +277,7 @@ nav div ~ div {
     text-indent: -9999em;
     cursor: pointer;
     background: url(../images/common/next.png) no-repeat;
+    transition: .3s;
 }
 .follower .wrap .next:hover {
     background: url(../images/common/next_hover.png) no-repeat;
@@ -411,6 +412,7 @@ main .hot_content .poster ul li:hover {
 }
 main .hot_content .poster ul li img {
     transition: .3s;
+    cursor: pointer;
 }
 main .hot_content .poster ul li:hover img {
     transform: scale(1.05);
@@ -443,6 +445,7 @@ main .hot_content .poster .prev {
     top:50%;
     transform: translateY(-50%);
     background: url(../images/common/prev.png) no-repeat;
+    transition: .3s;
 }
 main .hot_content .poster .prev:hover {
     background: url(../images/common/prev_hover.png) no-repeat;
@@ -453,6 +456,7 @@ main .hot_content .poster .next {
     top:50%;
     transform: translateY(-50%);
     background: url(../images/common/next.png) no-repeat;
+    transition: .3s;
 }
 main .hot_content .poster .next:hover {
     background: url(../images/common/next_hover.png) no-repeat;
@@ -574,15 +578,6 @@ main .chat_hellbound .top .title {
     height:31px;
     text-indent: -9999em;
 }
-.sub1 .chat_hellbound .btn a:nth-child(1):hover span {
-    background: url(../images/common/icon_hover_music.png) no-repeat -3px 9px;
-}
-.sub1 .chat_hellbound .btn a:nth-child(2):hover span {
-    background: url(../images/common/icon_hover_ott.png) no-repeat -3px 9px;
-}
-.sub1 .chat_hellbound .btn a:nth-child(3):hover span {
-    background: url(../images/common/icon_hover_heart.png) no-repeat -3px 9px;
-}
 .sub1 .chat_hellbound .info {
     display: flex;
     justify-content: space-between;
@@ -636,6 +631,7 @@ main .chat_hellbound .info .introduce .media_wrap a ~ a {
     background: url(../images/common/next.png) no-repeat;
     z-index: 100;
     text-indent: -9999em;
+    transition: .3s;
 }
 .sub1 .chat_hellbound .info .introduce .media_wrap .btn_next:hover {
     background: url(../images/common/next_hover.png) no-repeat;
@@ -1003,6 +999,7 @@ main .hot_content_music .poster ul li:hover {
 }
 main .hot_content_music .poster ul li img {
     transition: .3s;
+    cursor: pointer;
 }
 main .hot_content_music .poster ul li:hover img {
     transform: scale(1.05);
@@ -1035,6 +1032,7 @@ main .hot_content_music .poster .prev {
     top:50%;
     transform: translateY(-50%);
     background: url(../images/common/prev.png) no-repeat;
+    transition: .3s;
 }
 main .hot_content_music .poster .prev:hover {
     background: url(../images/common/prev_hover.png) no-repeat;
@@ -1045,6 +1043,7 @@ main .hot_content_music .poster .next {
     top:50%;
     transform: translateY(-50%);
     background: url(../images/common/next.png) no-repeat;
+    transition: .3s;
 }
 main .hot_content_music .poster .next:hover {
     background: url(../images/common/next_hover.png) no-repeat;
@@ -1176,6 +1175,7 @@ main .hot_content_music .poster .next:hover {
     top:26%;
     transform: translateY(-50%);
     background: url(../images/common/prev.png) no-repeat;
+    transition: .3s;
 }
 .sub2 .review_music .prev:hover {
     background: url(../images/common/prev_hover.png) no-repeat;
@@ -1186,6 +1186,7 @@ main .hot_content_music .poster .next:hover {
     top:26%;
     transform: translateY(-50%);
     background: url(../images/common/next.png) no-repeat;
+    transition: .3s;
 }
 .sub2 .review_music .next:hover {
     background: url(../images/common/next_hover.png) no-repeat;
