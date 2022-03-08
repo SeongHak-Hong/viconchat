@@ -213,7 +213,11 @@ main .review_music .prev {
 main .review_music .prev:hover {
   background: url(../images/common/prev_hover.png) no-repeat;
 }
-
+main .review_music .next {
+  position: absolute;
+  right: -18%;
+  top: 26%;
+}
 
 
 /* ***뮤직리스트 */
