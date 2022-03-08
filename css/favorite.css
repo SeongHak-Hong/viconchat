@@ -1,0 +1,42 @@
+/* 취향설정영역 */
+#favorite > div {
+  display: flex;
+  margin:30px auto 0;
+  width:560px;
+  height:42px;
+  box-sizing: border-box;
+  border:1px solid #dbdbdb;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+#favorite > div > span {
+  margin:0 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+#favorite button {
+  display:block;
+  width:70px;
+  height:20px;
+  background: url(../images/common/btn_frame.png) no-repeat;
+}
+#favorite button ~ button {
+  margin-left:10px;
+}
+#favorite > div button a {
+  display: block;
+  text-align: center;
+  color:#fff;
+  transform: translateY(-5%);
+}
+#favorite #setting {
+  position: absolute;
+  right:0;
+  background: url(../images/common/setting_blue.png) no-repeat;
+  width:17px;
+  height:16px;
+  margin-right:10px;
+  cursor: pointer;
+}

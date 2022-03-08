@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+/* ***팔로워영역 */
+#follower > div {
+    display: flex;
+    margin:30px auto;
+    width:560px;
+    border:1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding:16px 10px;
+    overflow: hidden;
+    position: relative;
+}
+/* 팔로워 ul */
+#follower ul {
+    display: flex;
+    width:100%;
+}
+/* 팔로워 li */
+#follower li {
+    width:66px;
+    height:86px;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+/* 팔로워 li 좌우간격 */
+#follower li ~ li {
+    margin-left:20px;
+}
+/* 팔로워 span */
+#follower span {
+    display: block;
+    letter-spacing: -0.05em;
+    padding-top:8px;
+}
+/* 팔로워 넥스트버튼 */
+#follower > div .next {
+    position: absolute;
+    width:38px;
+    height:38px;
+    right:2px;
+    top:50%;
+    transform: translateY(-50%);
+    text-indent: -9999em;
+    cursor: pointer;
+    background: url(../images/common/next.png) no-repeat;
+    transition: .3s;
+}
+/* 팔로워 넥스트버튼 호버시 */
+#follower > div .next:hover {
+    background: url(../images/common/next_hover.png) no-repeat;
+}
+
+
+
+
+
+
+/* ***메인영역 */
+main {
+    width:100%;
+    background: url(../images/main/poster1_hover.png) no-repeat;
+}
+main > div {
+    width:812px;
+    margin:0 auto;
+    padding-top:32px;
+}
+
+
+
+
+/* ***핫 콘텐츠 영역 */
+#hot-content {
+    height:805px;
+}
+/* 핫콘텐츠 상단영역 */
+#hot-content .top {
+    margin-bottom:20px;
+}
+/* 핫 콘텐츠 타이틀 */
+#hot-content .title {
+    color:#fff;
+}
+/* 핫 콘텐츠 탑영역 버튼 */
+#hot-content .top a {
+    position: absolute;
+    margin-left:20px;
+    right:0;
+    top:8px;
+}
+/* 핫 콘텐츠 설정버튼 */
+#hot-content .top a:nth-child(1) {
+    margin-right:35px;
+}
+/* 포스터 */
+#poster {
+    width:100%;
+    position: relative;
+}
+/* 포스터 ul */
+#poster ul {
+    display: flex;
+    justify-content: space-between;
+}
+/* 포스터 li */
+#poster li {
+    transition: .3s;
+    position: relative;
+}
+/* 포스터 li span */
+#poster li span {
+    display: block;
+    overflow: hidden;
+    width:244px;
+    height:354px;
+}
+/* 포스터 li 호버시 */
+#poster ul li:hover {
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+}
+/* 포스터 이미지 */
+#poster img {
+    transition: .3s;
+    cursor: pointer;
+}
+/* 포스터 li 호버시 이미지 */
+#poster li:hover img {
+    transform: scale(1.05);
+}
+/* 포스터 li after(선택 화살표) */
+#poster ul li:after {
+    content:'';
+    width:30px;
+    height:22px;
+    position: absolute;
+    display: none;
+    left:50%;
+    bottom:0px;
+    transform: translateX(-50%);
+    background: url(../images/common/choice.png) no-repeat;
+}
+/* 포스터 li 호버시 after(선택화살표) */
+#poster ul li:hover:after {
+    display: block;
+    bottom:-34px;
+}
+/* 포스터 버튼영역 */
+#poster .btn {
+    cursor: pointer;
+    display: block;
+    width:38px;
+    height:38px;
+    text-indent: -9999em;
+}
+/* 핫콘텐츠 게시판 */
+#hot-content .chat {
+    margin-top:30px;
+}
+/* 핫콘텐츠 게시판 썸네일 */
+#hot-content .chat .board .list1 td:nth-child(2) {
+    background: url(../images/main/thumbnail1.png) no-repeat 16px 50%;
+}
+#hot-content .chat .board .list2 td:nth-child(2) {
+    background: url(../images/main/thumbnail2.png) no-repeat 16px 50%;
+}
+#hot-content .chat .board .list3 td:nth-child(2) {
+    background: url(../images/main/thumbnail3.png) no-repeat 16px 50%;
+}
+#hot-content .chat .board .list4 td:nth-child(2) {
+    background: url(../images/main/thumbnail4.png) no-repeat 16px 50%;
+}
+#hot-content .chat .board .list5 td:nth-child(2) {
+    background: url(../images/main/thumbnail5.png) no-repeat 16px 50%;
+}
+
+
+
+/* ***핫챗 */
+/* 핫챗 상단영역 */
+#hot-chat .top {
+    margin-top:60px;
+    margin-bottom:20px;
+}
+/* 핫챗 상단 버튼영역 */
+#hot-chat .top .btn a {
+    position: absolute;
+    right:0;
+    top:8px;
+}
+#hot-chat .top .btn a:nth-child(1) {
+    margin-right:35px;
+}
+#hot-chat .chat .board {
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+#hot-chat .chat .board .label th {
+    background: #3fc0f0;
+    color:#fff;
+}
+#hot-chat .chat .board .list1 td:nth-child(2) {
+    background: url(../images/main/thumbnail1.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list2 td:nth-child(2) {
+    background: url(../images/main/thumbnail2.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list3 td:nth-child(2) {
+    background: url(../images/main/thumbnail3.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list4 td:nth-child(2) {
+    background: url(../images/main/thumbnail4.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list5 td:nth-child(2) {
+    background: url(../images/main/thumbnail5.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list6 td:nth-child(2) {
+    background: url(../images/main/thumbnail6.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list7 td:nth-child(2) {
+    background: url(../images/main/thumbnail7.png) no-repeat 16px 50%;
+}
+#hot-chat .chat .board .list8 td:nth-child(2) {
+    background: url(../images/main/thumbnail8.png) no-repeat 16px 50%;
+}

@@ -1,0 +1,314 @@
+/* 서브2 영역 */
+main {
+  background: url(../images/sub/poster1_hover.png) no-repeat;
+}
+main .hot_content_music {
+  height:805px;
+}
+main .hot_content_music .top {
+  margin-bottom:20px;
+}
+main .hot_content_music .top .title {
+  color:#fff;
+}
+main .hot_content_music .top a {
+  position: absolute;
+  margin-left:20px;
+  right:0;
+  top:8px;
+}
+main .hot_content_music .top a:nth-child(1) {
+  margin-right:35px;
+}
+main .hot_content_music .poster {
+  width:100%;
+  position: relative;
+}
+main .hot_content_music .poster ul {
+  display: flex;
+  justify-content: space-between;
+}
+main .hot_content_music .poster ul li {
+  transition: .3s;
+  position: relative;
+}
+main .hot_content_music .poster ul li span {
+  display: block;
+  overflow: hidden;
+  width:244px;
+  height:354px;
+}
+main .hot_content_music .poster ul li:hover {
+  box-shadow: 0 0 18px rgba(0,0,0,.5);
+}
+main .hot_content_music .poster ul li img {
+  transition: .3s;
+  cursor: pointer;
+}
+main .hot_content_music .poster ul li:hover img {
+  transform: scale(1.05);
+}
+main .hot_content_music .poster ul li:after {
+  content:'';
+  width:30px;
+  height:22px;
+  position: absolute;
+  display: none;
+  left:50%;
+  bottom:0px;
+  transform: translateX(-50%);
+  background: url(../images/common/choice.png) no-repeat;
+}
+main .hot_content_music .poster ul li:hover:after {
+  display: block;
+  bottom:-34px;
+}
+main .hot_content_music .poster .btn {
+  cursor: pointer;
+  display: block;
+  width:38px;
+  height:38px;
+  text-indent: -9999em;
+}
+main .hot_content_music .poster .prev {
+  position: absolute;
+  left:-8%;
+  top:50%;
+  transform: translateY(-50%);
+  background: url(../images/common/prev.png) no-repeat;
+  transition: .3s;
+}
+main .hot_content_music .poster .prev:hover {
+  background: url(../images/common/prev_hover.png) no-repeat;
+}
+main .chat {
+  margin-top:28px;
+}
+main .chat .top {
+  margin-bottom:20px;
+}
+main .music {
+  margin-top:60px !important;
+}
+main .chat .top .btn a {
+  position: absolute;
+  right:0;
+  top:8px;
+}
+main .chat .top .btn a:nth-child(1) {
+  right:35px;
+}
+main .music .musicList tr th {
+  background: #3fc0f0;
+  color:#fff;
+}
+main .music .musicList {
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+main .review_music {
+  width:100%;
+  height:654px;
+  background: url(../images/sub/albumArt1_hover.png) rgba(114,121,136,.9) no-repeat 50% 50%;
+  margin-top:60px;
+  position: relative;
+}
+main .review_music .wrap {
+  width:960px;
+  height:654px;
+  padding-top:60px;
+  overflow: hidden;
+  position: relative;
+}
+main .review_music .top {
+  display:block;
+  width:812px;
+  margin-left:72px;
+}
+main .review_music .top .title {
+  color:#fff;
+}
+main .review_music .top .btn a {
+  position: absolute;
+  right:0;
+  top:8px;
+  cursor: pointer;
+}
+main .review_music .top .btn a:nth-child(1) {
+  right:35px;
+}
+main .review_music .contents {
+  margin-top:86px;
+  transform: translateX(-180px);
+}
+main .review_music .contents ul {
+  display:flex;
+  width:100%;
+}
+main .review_music .contents ul li:nth-child(2),
+main .review_music .contents ul li:nth-child(5) {
+  margin-left:-40px;
+}
+main .review_music .contents .on .img {
+  display: block;
+  box-shadow: 0 0 36px rgba(255,255,255,.4);
+  width:280px;
+  height:280px;
+}
+main .review_music .contents .off {
+  transform: scale(.7142) translateY(-22px);
+}
+main .review_music .contents .off .img img {
+  opacity: .4;
+}
+main .review_music .contents .off .text,
+main .review_music .contents .off .text span,
+main .review_music .contents .off .btn {
+  color:transparent;
+  opacity: 0;
+}
+main .review_music .contents .text {
+  color:#fff;
+  text-align: center;
+  letter-spacing: -.025em;
+}
+main .review_music .contents .text strong {
+  display: block;
+  margin-top:32px;
+  font-size:24px;
+}
+main .review_music .contents .text span {
+  display: block;
+  margin-top:16px;
+  color:rgba(255,255,255,.5);
+}
+main .review_music .contents .btn {
+  margin-top:28px;
+  text-align: center;
+  cursor: pointer;
+}
+main .review_music .contents .btn span {
+  display:inline-block;
+  width:16px;
+  height:16px;
+  margin-left:24px;
+}
+main .review_music .contents .btn span:nth-child(3) img {
+  transform: translateY(110%);
+}
+main .review_music .contents > .btn {
+  cursor: pointer;
+  display: block;
+  width:38px;
+  height:38px;
+  text-indent: -9999em;
+}
+main .review_music .prev {
+  position: absolute;
+  left:20%;
+  top:26%;
+  transform: translateY(-50%);
+  background: url(../images/common/prev.png) no-repeat;
+  transition: .3s;
+}
+main .review_music .prev:hover {
+  background: url(../images/common/prev_hover.png) no-repeat;
+}
+
+
+
+/* ***뮤직리스트 */
+.musicList {
+  background: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicList tr {
+  display:flex;
+  align-items: center;
+}
+.musicList tr th {
+  height:40px;
+}
+.musicList th,
+.musicList tr:nth-child(2n+1) {
+  background: #f5f5f5;
+}
+.musicList th, 
+.musicList td {
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.musicList tr > .checkbox {
+  width:44px;
+}
+.musicList tr > .number {
+  width:38px;
+}
+.musicList tr > .albumArt {
+  width:54px;
+}
+.musicList tr .song {
+  display: block;
+  width:260px;
+  line-height: 56px;
+  padding-left:8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicList tr .singer {
+  display: block;
+  width:106px;
+  padding-left:8px;
+  line-height: 56px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicList tr .album {
+  display: block;
+  width:160px;
+  line-height: 56px;
+  padding-left:8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicList tr .icon {
+  width:42px;
+}
+.musicList tr .song,
+.musicList tr .singer,
+.musicList tr .album {
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicList tr .singer,
+.musicList tr .album {
+  color:#969696;
+}
+.musicList th:nth-child(1n+3) {
+  text-indent: -9999em;
+}
+.musicList td {
+  height:56px;
+}
+.musicList td:nth-child(9) {
+  line-height: 0;
+  cursor: pointer;
+}
+.musicList td:nth-child(7) a .off,
+.musicList td:nth-child(9) .off {
+  position: absolute;
+}
+.musicList td:nth-child(7):hover a .off,
+.musicList td:nth-child(9):hover div .off {
+  opacity: 0;
+}

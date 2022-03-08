@@ -4,95 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/sub2.css" rel="stylesheet">
+    <link href="css/favorite.css" rel="stylesheet">
+    <link href="css/visit.css" rel="stylesheet">
+    <link href="css/btn.css" rel="stylesheet">
     <link href="images/favicon/favicon.png" rel="shortcut icon">
     <title>VICONCHAT</title>
 </head>
 <body>
-    <header>
-        <div class="header_wrap">
-            <div class="header">
-                <h1 class="logo">
-                    <a href="index.html">
-                        <img src="images/common/logo.png" alt="비콘챗 로고">
-                    </a>
-                </h1>
-                <form class="nav_search" action="#" method="get">
-                    <button>search</button>
-                    <span>
-                        <input type="search" placeholder="챗, 콘텐츠 등 검색">
-                    </span>
-                </form>
-                <div class="hot_search">
-                    <ul>
-                        <li>
-                            <a href="#">1. 지옥</a>
-                            <span>new</span>
-                        </li>
-                    </ul>
-                </div>
-                <nav>
-                    <div class="chat">
-                        <a href="./sub1.html">
-                            <img src="images/common/chat.png" alt="챗">
-                        </a>
-                    </div>
-                    <div class="music">
-                        <a href="./sub2.html">
-                            <img src="images/common/music.png" alt="뮤직">
-                        </a>
-                    </div>
-                    <div class="profile">
-                        <a href="#">
-                            <img src="images/common/profile.png" alt="프로필">
-                        </a>
-                    </div>
-                </nav>
+    <!-- ***헤더 -->
+    <header id="header-wrap">
+        <div id="header">
+            <!-- 로고 -->
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/common/logo.png" alt="비콘챗 로고">
+                </a>
             </div>
+            <!-- 검색창 -->
+            <form id="nav-search" action="#" method="get">
+                <button>search</button>
+                <span>
+                    <input type="search" placeholder="챗, 콘텐츠 등 검색">
+                </span>
+            </form>
+            <!-- 실시간 인기 검색어 -->
+            <div id="hot-search">
+                <ul>
+                    <li>
+                        <a href="#">1. 지옥</a>
+                        <span>new</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 네비게이션 -->
+            <nav>
+                <div id="chat">
+                    <a href="./sub1.html">
+                        <img src="images/common/chat.png" alt="챗">
+                    </a>
+                </div>
+                <div id="music">
+                    <a href="./sub2.html">
+                        <img src="images/common/music.png" alt="뮤직">
+                    </a>
+                </div>
+                <div id="profile">
+                    <a href="#">
+                        <img src="images/common/profile.png" alt="프로필">
+                    </a>
+                </div>
+            </nav>
         </div>
     </header>
-    <section class="favorite">
+
+
+
+
+    <section id="favorite">
         <h2 class="hide">취향 설정 영역</h2>
-        <div class="wrap">
+        <div>
             <span>나의 취향</span>
-            <button class="genre">
+            <button>
                 <a href="#">액션</a>
             </button>
-            <button class="genre">
+            <button >
                 <a href="#">미스터리</a>
             </button>
-            <button class="genre">
+            <button>
                 <a href="#">영화</a>
             </button>
-            <button class="genre">
+            <button>
                 <a href="#">충격적인</a>
             </button>
-            <button class="setting">setting</button>
+            <button id="setting"></button>
         </div>
     </section>
-    <section class="visit">
+
+
+
+    <!-- ***최근방문영역 -->
+    <section id="visit">
         <h2 class="hide">최근 방문 챗 영역</h2>
-        <div class="wrap">
+        <div>
             <span>최근 방문</span>
-            <button class="genre">
-                <a href="#" class="chat_name">지옥</a>
-                <button class="close">×</button>
-            </button>
-            <button class="genre">
-                <a href="#" class="chat_name">오징어게임</a>
-                <button class="close">×</button>
-            </button>
-            <button class="genre">
-                <a href="#" class="chat_name">아케인</a>
-                <button class="close">×</button>
-            </button>
-            <button class="genre">
-                <a href="#" class="chat_name">기묘한 이야기</a>
-                <button class="close">×</button>
-            </button>
+            <div>
+                <a href="#">지옥</a>
+                <button>×</button>
+            </div>
+            <div>
+                <a href="#">오징어게임</a>
+                <button>×</button>
+            </div>
+            <div>
+                <a href="#">아케인</a>
+                <button>×</button>
+            </div>
+            <div>
+                <a href="#">기묘한 이야기</a>
+                <button>×</button>
+            </div>
         </div>
     </section>
-    <main class="sub2">
+
+
+
+
+    <!-- ***메인영역 -->
+    <main>
         <div class="wrap">
             <section class="hot_content_music">
                 <h2 class="hide">핫 콘텐츠 뮤직 영역</h2>

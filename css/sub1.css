@@ -1,0 +1,444 @@
+/* 서브1 영역 */
+main {
+  background: url(../images/main/poster1_hover.png) no-repeat;
+  width:100%;
+}
+/* 메인 래퍼 */
+main > div {
+  width:812px;
+  margin:0 auto;
+  padding-top:32px;
+}
+
+
+
+/* ***헬바운드(지옥) 게시판 */
+#chat-hellbound {
+  height:805px;
+}
+/* 게시판 상단영역 */
+#chat-hellbound .top {
+  height:31px;
+}
+/* 게시판 제목 */
+#chat-hellbound .top .title {
+  color:#fff;
+  margin-right:20px;
+}
+/* 게시판 부제 */
+#chat-hellbound .sub_title {
+  color:rgba(255,255,255,.55);
+  font-size:14px;
+  font-weight: 400;
+}
+/* 게시판 버튼영역  */
+#chat-hellbound .btn {
+  float: right;
+}
+/* 게시판 버튼영역 a  */
+#chat-hellbound .btn a {
+  margin-left:20px;
+  height:100%;
+}
+/* 버튼영역 뮤직버튼 */
+#chat-hellbound .btn a:nth-child(1) span {
+  display: inline-block;
+  background: url(../images/common/icon_music.png) no-repeat 0 10px;
+  width:14px;
+  height:31px;
+  text-indent: -9999em;
+}
+/* 버튼영역 OTT버튼 */
+#chat-hellbound .btn a:nth-child(2) span {
+  display: inline-block;
+  background: url(../images/common/icon_ott.png) no-repeat 0 10px;
+  width:16px;
+  height:31px;
+  text-indent: -9999em;
+}
+/* 버튼영역 찜버튼 */
+#chat-hellbound .btn a:nth-child(3) span {
+  display: inline-block;
+  background: url(../images/common/icon_heart.png) no-repeat 0 10px;
+  width:22px;
+  height:31px;
+  text-indent: -9999em;
+}
+/* 정보영역 */
+#info {
+  display: flex;
+  justify-content: space-between;
+}
+/* 포스터 */
+#poster {
+  width:244px;
+  height:354px;
+}
+/* 영화소개 영역 */
+#introduce {
+  width:542px;
+  height:354px;
+  background: #fff;
+}
+/* 영화소개 제목 */
+#introduce h3 {
+  font-size:16px;
+  font-weight: 500;
+  padding:14px 16px;
+}
+/* 영화소개 영상 */
+#introduce-video {
+  display: flex;
+  width:100%;
+  height:122px;
+  background: url(../images/sub/box_media.png) no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+/* 영화소개 영상 */
+#introduce-video a {
+  position: relative;
+  padding:9px 0;
+}
+/* 영화소개 영상 첫번째 a */
+#introduce-video a:nth-child(1) {
+  margin-left: 24px;
+}
+/* 영화소개 영상 a 사이간격 */
+#introduce-video a ~ a {
+  margin-left:10px;
+}
+/* 영화소개 두번째 영상 이미지 */
+#introduce-video a img:nth-child(2) {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index:100;
+}
+/* 영화소개영상 다음버튼 */
+#introduce-video .next {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    right: 0;
+    z-index: 100;
+}
+
+
+
+#introduce .text {
+  display: flex;
+  padding:24px 20px;
+}
+#introduce .text h4 {
+  color:#828282;
+  letter-spacing: -0.05em;
+  margin-right:20px;
+  font-weight: 500;
+}
+#introduce .text .part1 {
+  display: block;
+  width:188px;
+}
+#introduce .text .part1 ul li {
+  display: flex;
+}
+#introduce .text ul li ~ li{
+  margin-top:16px;
+}
+#introduce .text .part2 {
+  width:284px;
+}
+#introduce .text .part2 h4 {
+  margin-bottom:12px;
+}
+#introduce .text .part2 p {
+  line-height: 1.6;
+}
+#introduce .fix {
+  float:right;
+  margin-right:16px;
+}
+#introduce .fix button {
+  color:#cdcdcd;
+  font-weight: 500;
+  cursor: pointer;
+}
+#poster {
+  position: relative;
+}
+#poster:after {
+  content:'';
+  width:30px;
+  height:22px;
+  position: absolute;
+  display: block;
+  left:50%;
+  bottom:-34px;
+  transform: translateX(-50%);
+  background: url(../images/common/choice.png) no-repeat;
+}
+#chat-hellbound .poster .choiced {
+  position: absolute;
+  left:122px;
+  bottom:-30px;
+  transform: translateX(-50%);
+}
+#chat-hellbound .poster ul li:nth-child(2):hover .choiced {
+  left:284px;
+}
+#chat-hellbound .chat {
+  margin-top:28px;
+}
+#chat-hellbound .chat .board .list1 td:nth-child(2) {
+  background: url(../images/main/thumbnail1.png) no-repeat 16px 50%;
+}
+#chat-hellbound .chat .board .list2 td:nth-child(2) {
+  background: url(../images/main/thumbnail2.png) no-repeat 16px 50%;
+}
+#chat-hellbound .chat .board .list3 td:nth-child(2) {
+  background: url(../images/main/thumbnail3.png) no-repeat 16px 50%;
+}
+#chat-hellbound .chat .board .list4 td:nth-child(2) {
+  background: url(../images/main/thumbnail4.png) no-repeat 16px 50%;
+}
+#chat-hellbound .chat .board .list5 td:nth-child(2) {
+  background: url(../images/main/thumbnail5.png) no-repeat 16px 50%;
+}
+
+
+main .linked_chat .top {
+  display: flex;
+  justify-content: space-between;
+  height:34px;
+  margin-top:60px;
+  position: relative;
+  align-items: center;
+}
+main .linked_chat .top img {
+  display: block;
+}
+main .linked_chat .top .btn_left .btn ~ .btn {
+  margin-left:10px;
+}
+main .linked_chat .top .btn_left button {
+  width:70px;
+  height:20px;
+  color:#fff;
+  line-height: 20px;
+}
+main .linked_chat .top .btn_left button {
+  background: url(../images/common/btn_frame_blue.png) no-repeat;
+}
+main .linked_chat .top .btn_left button:hover {
+  background: url(../images/common/btn_frame.png) no-repeat;
+  cursor: pointer;
+}
+main .linked_chat .top .btn_left button.on {
+  background: url(../images/common/btn_frame.png) no-repeat;
+  cursor: pointer;
+}
+main .linked_chat .top .btn_left button ~ button {
+  margin-left:10px;
+}
+main .linked_chat .top .search {
+  display: flex;
+  align-items: center;
+}
+main .linked_chat .top .search .opt_search {
+  width:96px;
+  height:18px;
+  border-bottom:1px solid #3fc0f0;
+  cursor:pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+main .linked_chat .top .search .opt_search ul li {
+  padding-left:6px;
+}
+main .linked_chat .top .search .opt_search span {
+  display: block;
+  cursor:pointer;
+  position: absolute;
+  right:6px;
+  top:25%;
+}
+main .linked_chat .top .bar_search {
+  position: relative;
+}
+main .linked_chat .top .bar_search span {
+  display:block;
+  margin-left:20px;
+  border:1px solid #3fc0f0;
+  box-sizing: border-box;
+  width:238px;
+  height:34px;
+  line-height: 32px;
+  padding-left:50px;
+  border-radius: 20px;
+}
+main .linked_chat .top .bar_search button {
+  width:14px;
+  height:14px;
+  transform: translateY(-50%);
+  background: url(../images/common/search.png) no-repeat 0 50%;
+  position: absolute;
+  left:40px;
+  top:50%;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+main .linked_chat .top .bar_search input {
+  outline:none;
+}
+main .linked_chat .top .bar_search input::placeholder {
+  font-size:13px;
+  color:#ccc;
+}
+main .linked_chat .top .opt {
+  display: flex;
+  align-items: center;
+}
+main .linked_chat .top .opt .dropdown,
+main .linked_chat .top .opt .icon {
+  margin-left:20px;
+}
+main .linked_chat .top .opt img {
+  display: block;
+}
+main .linked_chat .top .opt .dropdown {
+  width:70px;
+  height:20px;
+  line-height: 18px;
+  border:1px solid #3fc0f0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+main .linked_chat .top .opt .dropdown ul {
+  display: flex;
+  justify-content: space-between;
+}
+main .linked_chat .top .opt .dropdown ul li {
+  padding-left:10px;
+}
+main .linked_chat .top .opt .dropdown .shape {
+  position: absolute;
+  right:6px;
+  top:50%;
+  transform: translateY(-50%);
+}
+main .linked_chat .chat .board {
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+main .linked_chat .chat .board .label th {
+  background: #3fc0f0;
+  color:#fff;
+}
+main .linked_chat .chat .board .list1 td:nth-child(2) {
+  background: url(../images/sub/thumbnail1.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list2 td:nth-child(2) {
+  background: url(../images/sub/thumbnail2.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list3 td:nth-child(2) {
+  background: url(../images/sub/thumbnail3.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list4 td:nth-child(2) {
+  background: url(../images/sub/thumbnail4.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list5 td:nth-child(2) {
+  background: url(../images/sub/thumbnail5.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list6 td:nth-child(2) {
+  background: url(../images/sub/thumbnail6.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list7 td:nth-child(2) {
+  background: url(../images/sub/thumbnail7.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list8 td:nth-child(2) {
+  background: url(../images/sub/thumbnail8.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list9 td:nth-child(2) {
+  background: url(../images/sub/thumbnail9.png) no-repeat 16px 50%;
+}
+main .linked_chat .chat .board .list10 td:nth-child(2) {
+  background: url(../images/sub/thumbnail10.png) no-repeat 16px 50%;
+}
+
+
+main .linked_chat .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top:14px;
+  height:22px;
+  line-height: 22px;
+}
+main .linked_chat .bottom .btn {
+  display: inline-block;
+  cursor: pointer;
+}
+main .linked_chat .bottom .btn_left .btn button {
+  width:70px;
+  color:#fff;
+  line-height: 20px;
+  cursor: pointer;
+}
+main .linked_chat .bottom .btn_left .btn ~ .btn {
+  margin-left:10px;
+}
+main .linked_chat .bottom .btn_left .btn button {
+  background: url(../images/common/btn_frame_blue.png) no-repeat;
+}
+main .linked_chat .bottom .btn_left .btn button:hover {
+  background: url(../images/common/btn_frame.png) no-repeat;
+}
+main .linked_chat .bottom .btn_left .btn button.on {
+  background: url(../images/common/btn_frame.png) no-repeat;
+}
+main .linked_chat .bottom .opt img {
+  display: block;
+}
+main .linked_chat .bottom .opt .dropdown {
+  width:70px;
+  height:20px;
+  line-height: 18px;
+  border:1px solid #3fc0f0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+main .linked_chat .bottom .opt .dropdown ul {
+  display: flex;
+  justify-content: space-between;
+}
+main .linked_chat .bottom .opt .dropdown ul li {
+  padding-left:10px;
+}
+main .linked_chat .bottom .opt .dropdown .shape {
+  position: absolute;
+  right:6px;
+  top:50%;
+  transform: translateY(-50%);
+}
+main .linked_chat .bottom .opt .icon {
+  vertical-align: middle;
+  margin-left:20px;
+  transform: translateY(-2px);
+}
+main .paging ul {
+  display: flex;
+  width:262px;
+  margin:16px auto 0;
+  justify-content: space-between;
+}
+main .paging ul li a {
+  color:#828282;
+}
+main .paging ul li a:hover {
+  color:#ffb600;
+}
+main .paging ul li.on a {
+  color:#ffb600;
+}

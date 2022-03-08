@@ -80,3 +80,67 @@ input:checked + label::after{
     left:50%;
     top:50%;
 }
+
+/* 공통 */
+.top {
+    position: relative;
+    margin-bottom:10px;
+}
+.title {
+    float:left;
+    font-size:22px;
+    font-weight: 500;
+    margin-right:20px;
+}
+.sub_title {
+    float:left;
+    padding-top:6px;
+    color:rgba(255,255,255,.55);
+    font-size:14px;
+    font-weight: 400;
+}
+main .wrap .top > .btn {
+    float: right;
+    /* bottom:-8px; */
+}
+/* 게시판(챗) */
+.board {
+    background: #fff;
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.board th,
+.board tr:nth-child(2n+1) {
+    background: #f5f5f5;
+}
+.board th {
+    height:40px;
+}
+.board td {
+    height:56px;
+}
+.board td:nth-child(2) {
+    text-align: start;
+    padding-left:104px;
+}
+.board .t_number {
+    width:64px;
+}
+.board .t_title {
+    width:426px;
+}
+.board .t_writer,
+.board .t_date,
+.board .t_views,
+.board .t_recommend {
+    width:64px;
+}
+.board td span {
+    display: inline-block;
+    color:#3fc0f0;
+    margin-left:7px;
+}
+.board img {
+    display:inline-block;
+}

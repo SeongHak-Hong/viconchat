@@ -4,56 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/btn.css" rel="stylesheet">
     <link href="images/favicon/favicon.png" rel="shortcut icon">
     <title>VICONCHAT</title>
 </head>
 <body>
-    <header>
-        <!-- ***헤더 -->
-        <div class="header_wrap">
-            <div class="header">
-                <!-- 로고 -->
-                <h1 class="logo">
-                    <a href="index.html">
-                        <img src="images/common/logo.png" alt="비콘챗 로고">
-                    </a>
-                </h1>
-                <!-- 검색창 -->
-                <form class="nav_search" action="#" method="get">
-                    <button>search</button>
-                    <span>
-                        <input type="search" placeholder="챗, 콘텐츠 등 검색">
-                    </span>
-                </form>
-                <!-- 실시간 인기 검색어 -->
-                <div class="hot_search">
-                    <ul>
-                        <li>
-                            <a href="#">1. 지옥</a>
-                            <span>new</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="chat">
-                        <a href="./sub1.html">
-                            <img src="images/common/chat.png" alt="챗">
-                        </a>
-                    </div>
-                    <div class="music">
-                        <a href="./sub2.html">
-                            <img src="images/common/music.png" alt="뮤직">
-                        </a>
-                    </div>
-                    <div class="profile">
-                        <a href="#">
-                            <img src="images/common/profile.png" alt="프로필">
-                        </a>
-                    </div>
-                </nav>
+    <!-- ***헤더 -->
+    <header id="header-wrap">
+        <div id="header">
+            <!-- 로고 -->
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/common/logo.png" alt="비콘챗 로고">
+                </a>
             </div>
+            <!-- 검색창 -->
+            <form id="nav-search" action="#" method="get">
+                <button>search</button>
+                <span>
+                    <input type="search" placeholder="챗, 콘텐츠 등 검색">
+                </span>
+            </form>
+            <!-- 실시간 인기 검색어 -->
+            <div id="hot-search">
+                <ul>
+                    <li>
+                        <a href="#">1. 지옥</a>
+                        <span>new</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 네비게이션 -->
+            <nav>
+                <div id="chat">
+                    <a href="./sub1.html">
+                        <img src="images/common/chat.png" alt="챗">
+                    </a>
+                </div>
+                <div id="music">
+                    <a href="./sub2.html">
+                        <img src="images/common/music.png" alt="뮤직">
+                    </a>
+                </div>
+                <div id="profile">
+                    <a href="#">
+                        <img src="images/common/profile.png" alt="프로필">
+                    </a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -61,9 +63,9 @@
 
 
     <!-- ***팔로워 -->
-    <section class="follower">
+    <section id="follower">
         <h2 class="hide">팔로워 업데이트 소식 영역</h2>
-        <div class="wrap">
+        <div>
             <ul>
                 <li>
                     <a href="#">
@@ -116,12 +118,13 @@
 
 
     <!-- ***메인 영역 -->
-    <main class="index">
-        <div class="wrap">
+    <main>
+        <div>
+
 
 
             <!-- ***핫 콘텐츠 영역 -->
-            <section class="hot_content">
+            <section id="hot-content">
                 <h2 class="hide">핫 콘텐츠 영역</h2>
                 <div class="top clear">
                     <h2 class="title">핫 콘텐츠</h2>
@@ -135,7 +138,7 @@
                     </div>
                 </div>
                 <!-- 포스터 -->
-                <div class="poster">
+                <div id="poster">
                     <ul>
                         <li>
                             <span>
@@ -241,8 +244,9 @@
 
 
             <!-- ***인기 게시판 -->
-            <section class="hot_chat">
+            <section id="hot-chat">
                 <h2 class="hide">핫 챗 영역</h2>
+                <!-- 상단영역 -->
                 <div class="top clear">
                     <h2 class="title">핫 챗</h2>
                     <div class="btn">
@@ -254,6 +258,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- 게시판 -->
                 <div class="chat">
                     <form>
                         <table class="board">

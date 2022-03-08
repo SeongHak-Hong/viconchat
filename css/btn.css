@@ -1,0 +1,29 @@
+/* 이전버튼 */
+.prev {
+  position: absolute;
+  left:-8%;
+  top:50%;
+  transform: translateY(-50%);
+  background: url(../images/common/prev.png) no-repeat;
+  transition: .3s;
+  cursor: pointer;
+}
+/* 이전버튼 호버시 */
+.prev:hover {
+  background: url(../images/common/prev_hover.png) no-repeat;
+}
+/* 다음버튼 */
+.next {
+  position: absolute;
+  right:-8%;
+  top:50%;
+  transform: translateY(-50%);
+  background: url(../images/common/next.png) no-repeat;
+  transition: .3s;
+  cursor: pointer;
+
+}
+/* 다음버튼 호버시 */
+.next:hover {
+  background: url(../images/common/next_hover.png) no-repeat;
+}
